@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dog breed Quiz</h1>
+        <p class="dog-text">
+            Name of breed
+        </p>
+        <img id=image src="" />
+      
+   
+
+    <form name="chapter" method="post">
+        <label class="label">Enter Breed:</label>
+        <br> <br>
+        <input type="text" name="pass" class="inputText" placeholder="Enter Breed">
+        <input type="button" name="log"  value="Submit" onclick="page1()">
+    </form>
+    <p class="the-text">
+        Breed
+    </p>
+
+    <div class="button">
+        <button class="btn new-joke-btn">Next image</button>
+    </div>
+</div>
+</body>
+<script>
+const jokeText = document.querySelector('.dog-text');
+const newJokeBtn = document.querySelector('.new-joke-btn');
+
+const text =  document.querySelector('.the-text');
+
+newJokeBtn.addEventListener('click', getDog);
+getDog();
+
+function getDog() {
+    fetch('https://dog.ceo/api/breeds/image/random', {
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(function(response) {
+        return response.json();
+    }).then(function(data) {
+
+        let dog = data.message.split('/')[4]
+        jokeText.innerText = dog;
+        document.getElementById('image').src = data.message;
+    });
+}
+function page1() {
+    var pw = document.forms["chapter"]["pass"].value;
+    if (pw == jokeText.innerText) {
+        text.innerText = "Correct! you can claim a treat."
+    } else {
+        text.innerText = "incorrect. Try again"
+    }
+}
+</script>
+
+</html>
