@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+    <title>Dog Breeds Quiz</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="contain">
         <div class="left-div">
             <h1>Dog breed Quiz</h1>
             <p class="dog-text">
@@ -20,7 +23,7 @@
 
 
             <form name="chapter" method="post">
-                <label class="label">Enter Breed:</label>
+                <label class="label">Enter Breed Name:</label>
                 <br> <br>
                 <input type="text" name="pass" class="inputText" placeholder="Enter Breed">
                 <input type="button" name="log" value="Submit" onclick="page1()">
@@ -37,19 +40,21 @@
             <p class="breed-list">
                 Dog Breed List
             </p>
-            <table class="container">
+            <div class="stroll">
+            <table class="container" >
                 <thead>
                     <tr>
 
                         <th>
                             <h1>Breed</h1>
                         </th>
+                      
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>Affenpinscher</td>
-
+    
                     </tr>
                     <tr>
                         <td>African</td>
@@ -79,6 +84,75 @@
                         <td>Filler</td>
 
                     </tr>
+                    
+                </tr>
+                <tr>
+                    <td>African</td>
+
+                </tr>
+                <tr>
+                    <td>Airedale</td>
+
+                </tr>
+                <tr>
+                    <td>Akita</td>
+
+                </tr>
+                <tr>
+                    <td>Appenzeller</td>
+
+                </tr>
+                <tr>
+                    <td>Filler</td>
+
+                </tr>
+                <tr>
+                    <td>Filler</td>
+
+                </tr>
+                <tr>
+                    <td>Filler</td>
+
+                </tr>
+                <tr>
+                    <td>Filler</td>
+
+                </tr>
+                <tr>
+                    <td>Filler</td>
+
+                </tr>
+                
+            </tr>
+            <tr>
+                <td>African</td>
+
+            </tr>
+            <tr>
+                <td>Airedale</td>
+
+            </tr>
+            <tr>
+                <td>Akita</td>
+
+            </tr>
+            <tr>
+                <td>Appenzeller</td>
+
+            </tr>
+            <tr>
+                <td>Filler</td>
+
+            </tr>
+            <tr>
+                <td>Filler</td>
+
+            </tr>
+            <tr>
+                <td>Filler</td>
+
+            </tr>
+
 
 
 
@@ -87,13 +161,13 @@
 
 
             </table>
-
+        </div>
 
         </div>
     </div>
 </body>
 <script>
-    const jokeText = document.querySelector('.dog-text');
+    const dogText = document.querySelector('.dog-text');
     const newJokeBtn = document.querySelector('.new-joke-btn');
 
     const text = document.querySelector('.the-text');
@@ -111,7 +185,7 @@
         }).then(function (data) {
 
             let dog = data.message.split('/')[4]
-            jokeText.innerText = dog;
+            dogText.innerText = dog;
             document.getElementById('image').src = data.message;
         });
     }
