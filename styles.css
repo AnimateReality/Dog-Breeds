@@ -14,12 +14,31 @@ body {
     font-weight: 300;
     line-height: 1em;
     text-align: center;
-    color: #ca2a80;
+    color: #970d0d;
+    text-shadow: -1px -1px 0 rgb(238, 226, 226), 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   }
+.left-div{
+  float: left;
+}
+.right-div{
+  float: right;
+}
+
+#image {
+  border: 5px solid red;
+  max-height: 500px;
+  max-width: 800px;
+}
   
   p {
     text-align: left;
     line-height: 1.5;
+  }
+
+  .breed-list {
+    text-align: right;
+    border: 5px solid #7f7c21;
+
   }
   
   .pages {
