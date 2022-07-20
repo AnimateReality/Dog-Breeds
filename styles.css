@@ -35,7 +35,7 @@ h1 {
 
 #image {
   border: 5px solid red;
-  max-height: 500px;
+  max-height: 400px;
   max-width: 800px;
 }
 
@@ -60,10 +60,7 @@ form {
 
 .inputText {
   border-radius: 8px;
-  border: 2px solid red;
-  width: 30%;
-  font-size: 20px;
-  font-family: serif;
+ 
   margin-bottom: 10px;
 }
 
@@ -88,7 +85,7 @@ form {
 }
 .stroll{
   overflow-y: scroll;
-  height: 500px;
+  height: 600px;
 }
 /* Table */
 .container {
@@ -118,7 +115,7 @@ form {
 
 /* Handle on hover */
 .stroll::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: #d80286; 
 }
 .container td {
   font-weight: normal;
