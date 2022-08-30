@@ -1,7 +1,7 @@
 body {
-  background-color: #0093e9;
-  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
-  font-family: 'Fuzzy Bubbles', cursive;
+  background-color: #5bbef7;
+  background-image: linear-gradient(160deg, #75a4bf 0%, #b7e8e3 100%);
+  font-family: "Fuzzy Bubbles", cursive;
 }
 
 h2 {
@@ -19,7 +19,7 @@ h1 {
     1px 1px 0 #000;
 }
 /* container for page */
-.contain{
+.contain {
   width: 80%;
   margin: 0 auto;
 }
@@ -34,7 +34,7 @@ h1 {
 }
 
 #image {
-  border: 5px solid red;
+  border: 2px solid rgb(216, 2, 134);
   max-height: 400px;
   max-width: 800px;
 }
@@ -49,18 +49,14 @@ p {
   text-align: center;
 }
 
-
 form {
   margin-top: 5%;
 }
 .label {
   text-align: left;
-  padding-right: 23%;
 }
 
 .inputText {
-  border-radius: 8px;
- 
   margin-bottom: 10px;
 }
 
@@ -83,7 +79,7 @@ form {
 .slide_left:hover {
   box-shadow: inset 0 0 0 50px #d80286;
 }
-.stroll{
+.stroll {
   overflow-y: scroll;
   height: 600px;
 }
@@ -103,19 +99,19 @@ form {
 
 /* Track */
 .stroll::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
- 
+
 /* Handle */
 .stroll::-webkit-scrollbar-thumb {
-  background: red; 
+  background: red;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 .stroll::-webkit-scrollbar-thumb:hover {
-  background: #d80286; 
+  background: #d80286;
 }
 .container td {
   font-weight: normal;
