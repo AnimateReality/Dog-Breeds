@@ -32,7 +32,9 @@ h1 {
   float: right;
   width: 30%;
 }
-
+#Myid {
+  display: none;;
+}
 #image {
   border: 2px solid rgb(216, 2, 134);
   max-height: 400px;

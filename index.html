@@ -16,11 +16,17 @@
         <div class="left-div">
             <h1>Dog breed Quiz</h1>
             <!-- Name of the breed is displayed based on the metadata from the api data -->
-            <p class="dog-text"> 
-                Name of breeds
-            </p>
+            <div>
+           
             <!-- The data for the image comes from api -->
             <img id=image src="" />
+            <div id="Myid">
+                <p class="dog-text"> 
+                    Name of breeds
+                </p>
+            </div>
+            <button onclick="toggleText()">Reveal Answer</button>
+        </div>
 
             <form name="chapter" method="post">
                 <label class="label">Enter Breed Name:</label>
@@ -207,6 +213,14 @@
             answerText.innerText = "incorrect. Try again"
         }
     }
+    function toggleText(){
+  var x = document.getElementById("Myid");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 </script>
 
 </html>
