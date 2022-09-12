@@ -14,7 +14,7 @@ h1 {
   font-weight: 300;
   line-height: 1em;
   text-align: center;
-  color: #970d0d;
+  color: #f69206;
   text-shadow: -1px -1px 0 rgb(238, 226, 226), 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
@@ -29,6 +29,7 @@ h1 {
   width: 70%;
 }
 .right-div {
+  margin-top: 50px;
   float: right;
   width: 30%;
 }
@@ -36,7 +37,7 @@ h1 {
   display: none;;
 }
 #image {
-  border: 2px solid rgb(216, 2, 134);
+  border: 2px solid #f09819;
   max-height: 400px;
   max-width: 800px;
 }
@@ -60,6 +61,39 @@ form {
 
 .inputText {
   margin-bottom: 10px;
+}
+
+
+
+/* CSS */
+.btn {
+  margin: 5px;
+  padding: 7.5px 15px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 500;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
 
 .button_slide {
@@ -107,7 +141,7 @@ form {
 
 /* Handle */
 .stroll::-webkit-scrollbar-thumb {
-  background: red;
+  background: rgb(69, 199, 132);
   border-radius: 10px;
 }
 
@@ -145,7 +179,7 @@ form {
 }
 
 .container td:first-child {
-  color: #fb667a;
+  color: #f09819;
 }
 
 .container tr:hover {

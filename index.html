@@ -17,16 +17,16 @@
             <h1>Dog breed Quiz</h1>
             <!-- Name of the breed is displayed based on the metadata from the api data -->
             <div>
-           
-            <!-- The data for the image comes from api -->
-            <img id=image src="" />
-            <div id="Myid">
-                <p class="dog-text"> 
-                    Name of breeds
-                </p>
+
+                <!-- The data for the image comes from api -->
+                <img id=image src="" />
+                <div id="Myid">
+                    <p class="dog-text">
+                        Name of breeds
+                    </p>
+                </div>
+                <button class="btn" onclick="toggleText()">Reveal Answer</button>
             </div>
-            <button onclick="toggleText()">Reveal Answer</button>
-        </div>
 
             <form name="chapter" method="post">
                 <label class="label">Enter Breed Name:</label>
@@ -35,7 +35,7 @@
                 <input type="button" name="log" value="Submit" onclick="page1()">
             </form>
             <p class="answer-text">
-               
+
             </p>
 
             <div class="button">
@@ -43,9 +43,7 @@
             </div>
         </div>
         <div class="right-div">
-            <p class="breed-list">
-                Dog Breed List
-            </p>
+       
             <div class="stroll">
                 <table class="container">
                     <thead>
@@ -131,50 +129,50 @@
                             <td>Cotondetulear</td>
                         </tr>
                         <td>Dachshund</td>
-                    </tr>
-                    <tr>
-                        <td>Dalmatian</td>
-                    </tr>
-                    <tr>
-                        <td>Great Dane</td>
-                    </tr>
-                    <tr>
-                        <td>Scottish Deerhound</td>
-                    </tr>
-                    <tr>
-                        <td>Dhole</td>
-                    </tr>
-                    <tr>
-                        <td>Dingo</td>
-                    </tr>
-                    <tr>
-                        <td>Doberman</td>
-                    </tr>
-                    <tr>
-                        <td>Norwegian Elkhound</td>
-                    </tr>
-                    </tr>
-                    <tr>
-                        <td>Entlebucher</td>
-                    </tr>
-                    <tr>
-                        <td>Eskimor</td>
-                    </tr>
-                    <tr>
-                        <td>Lapphund Finnish</td>
-                    </tr>
-                    <tr>
-                        <td>Bichon Frise</td>
-                    </tr>
-                    <tr>
-                        <td>Germanshepherd</td>
-                    </tr>
-                    <tr>
-                        <td>Italian Greyhound</td>
-                    </tr>
-                    <tr>
-                        <td>Groenendael</td>
-                    </tr>
+                        </tr>
+                        <tr>
+                            <td>Dalmatian</td>
+                        </tr>
+                        <tr>
+                            <td>Great Dane</td>
+                        </tr>
+                        <tr>
+                            <td>Scottish Deerhound</td>
+                        </tr>
+                        <tr>
+                            <td>Dhole</td>
+                        </tr>
+                        <tr>
+                            <td>Dingo</td>
+                        </tr>
+                        <tr>
+                            <td>Doberman</td>
+                        </tr>
+                        <tr>
+                            <td>Norwegian Elkhound</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>Entlebucher</td>
+                        </tr>
+                        <tr>
+                            <td>Eskimor</td>
+                        </tr>
+                        <tr>
+                            <td>Lapphund Finnish</td>
+                        </tr>
+                        <tr>
+                            <td>Bichon Frise</td>
+                        </tr>
+                        <tr>
+                            <td>Germanshepherd</td>
+                        </tr>
+                        <tr>
+                            <td>Italian Greyhound</td>
+                        </tr>
+                        <tr>
+                            <td>Groenendael</td>
+                        </tr>
                 </table>
             </div>
 
@@ -213,14 +211,15 @@
             answerText.innerText = "incorrect. Try again"
         }
     }
-    function toggleText(){
-  var x = document.getElementById("Myid");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+
+    function toggleText() {
+        var x = document.getElementById("Myid");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
 </script>
 
 </html>
