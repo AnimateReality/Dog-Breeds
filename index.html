@@ -27,20 +27,21 @@
                     </p>
                 </div>
                 <button class="btn" onclick="toggleText()">Reveal Answer</button>
+                <!-- onclick reveals the answer without submitting -->
             </div>
 
             <form name="chapter" method="post">
                 <label class="label">Enter Breed Name:</label>
                 <br> <br>
                 <input type="text" name="pass" class="inputText" placeholder="Enter Breed">
-                <input type="button" name="log" value="Submit" onclick="page1()">
+                <input class="submit" type="button" name="log" value="Submit" onclick="page1()">
             </form>
             <p class="answer-text">
 
             </p>
 
             <div class="button">
-                <button class="btn next-btn">Next image</button>
+                <button class="btn next-btn">Next Image</button>
             </div>
         </div>
         <div class="right-div">
@@ -176,7 +177,8 @@
                         </tr>
                 </table>
             </div>
-
+            <!-- Gotta update table of breeds otherwise site is pretty much done -->
+            <!-- will look at maybe sortign this more efficiently possibly mapping through the data -->
         </div>
     </div>
 </body>
@@ -194,6 +196,7 @@
             headers: {
                 'Accept': 'application/json'
             }
+            // gets a random dog
         }).then(function (response) {
             return response.json();
         }).then(function (data) {
@@ -212,7 +215,7 @@
             answerText.innerText = "incorrect. Try again"
         }
     }
-
+// submit button checks whether answer is correct and displays text base on answer
     function toggleText() {
         var x = document.getElementById("Myid");
         if (x.style.display === "none") {
