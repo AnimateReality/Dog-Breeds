@@ -6,13 +6,22 @@ body {
 
 h2 {
   color: rgb(32, 28, 28);
-
   font-size: 40px;
 }
 h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1em;
+  text-align: center;
+  color: #f69206;
+  text-shadow: -1px -1px 0 rgb(238, 226, 226), 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+h3 {
   font-size: 30px;
   font-weight: 300;
   line-height: 1em;
+  margin-bottom: 0px;
   text-align: center;
   color: #f69206;
   text-shadow: -1px -1px 0 rgb(238, 226, 226), 1px -1px 0 #000, -1px 1px 0 #000,
