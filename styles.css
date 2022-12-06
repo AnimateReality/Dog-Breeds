@@ -47,8 +47,8 @@ h3 {
 }
 #image {
   border: 2px solid #f09819;
-  max-height: 400px;
-  max-width: 800px;
+  max-height: 300px;
+  max-width: 600px;
 }
 
 p {
@@ -90,7 +90,18 @@ form {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-
+.darkMode{
+  margin-bottom: 5%;
+}
+#toggleDark {
+  border: solid #f09819 1px;
+  padding: 7px;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  float: left;
+  background-color: rgb(219, 218, 206);
+}
 /* CSS */
 .btn {
   margin: 5px;
@@ -110,6 +121,7 @@ form {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
+
 
 .btn:hover {
   background-position: right center;
