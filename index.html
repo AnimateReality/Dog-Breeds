@@ -18,7 +18,7 @@
     <div class="contain">
         <div class="left-div">
             <div class="darkMode">
-            <button class="bi bi-brightness-high-fill" id="toggleDark"></button>
+            <button class="bi-moon" id="toggleDark"></button>
             <h1>Dog Breed Quiz</h1>
         </div>
             
@@ -214,8 +214,15 @@
     }
 
     function page1() {
-        var pw = document.forms["chapter"]["pass"].value;
-        if (pw == dogText.innerText) {
+        // get the value of the "pass" input field
+        var pass = document.chapter.pass.value;
+
+        // create the regular expression so it doesnt penalize based on capitals and -
+        var regex = /^[A-Za-z]*-?[A-Za-z]*$/i;
+
+
+        // check if the value of "pass" input field matches the regular expression
+        if (regex.test(pass) && pass.toLowerCase()  == dogText.innerText.toLowerCase()) {
             answerText.innerText = "Correct! you can claim a treat."
         } else {
             answerText.innerText = "incorrect. Try again"
