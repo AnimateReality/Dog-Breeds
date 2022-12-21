@@ -23,3 +23,52 @@ for (var i = 0; i < breeds.length; i++) {
     row.appendChild(cell);
     table.appendChild(row);
   }
+
+  const dogText = document.querySelector('.dog-text');
+  const nextBtn = document.querySelector('.next-btn');
+  const answerText = document.querySelector('.answer-text');
+
+
+  nextBtn.addEventListener('click', getDog);
+  getDog();
+
+  function getDog() {
+      fetch('https://dog.ceo/api/breeds/image/random', {
+          headers: {
+              'Accept': 'application/json'
+          }
+          // gets a random dog
+      }).then(function (response) {
+          return response.json();
+      }).then(function (data) {
+
+          let dog = data.message.split('/')[4]
+          dogText.innerText = dog;
+          document.getElementById('image').src = data.message;
+      });
+  }
+
+  function page1() {
+      // get the value of the "pass" input field
+      var pass = document.chapter.pass.value;
+
+      // create the regular expression so it doesnt penalize based on capitals and -
+      var regex = /^[A-Za-z]*-?[A-Za-z]*$/i;
+
+
+      // check if the value of "pass" input field matches the regular expression
+      if (regex.test(pass) && pass.toLowerCase()  == dogText.innerText.toLowerCase()) {
+          answerText.innerText = "Correct! you can claim a treat."
+      } else {
+          answerText.innerText = "incorrect. Try again"
+      }
+  }
+// submit button checks whether answer is correct and displays text base on answer
+  function toggleText() {
+      var x = document.getElementById("Myid");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+  }
