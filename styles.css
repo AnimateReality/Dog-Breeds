@@ -1,11 +1,11 @@
 body {
-  background-color: #5bbef7;
+  background-color: #e6f2ff; /* light blue background color */
   background-image: linear-gradient(160deg, #75a4bf 0%, #b7e8e3 100%);
   font-family: "Fuzzy Bubbles", cursive;
 }
 
 h2 {
-  color: rgb(32, 28, 28);
+  color: #333; /* dark gray text color */
   font-size: 40px;
 }
 h1 {
@@ -46,10 +46,14 @@ h3 {
   display: none;;
 }
 #image {
-  border: 2px solid #f09819;
   max-height: 300px;
   max-width: 600px;
+  border-radius: 6%;
+  box-shadow: 0 0 20px 5px rgba(255, 150, 0, 0.6);
+  margin-bottom: 25px;
 }
+
+
 
 p {
   text-align: left;
@@ -162,13 +166,16 @@ form {
   text-align: left;
   margin: 0 auto;
   display: table;
-  width: 50%;
-  color: rgb(216, 2, 134);
-  border: #d80286 solid 5px;
+  width: 60%;
+  margin-right: 15%;
+  color: #000000; /* black text color */
+  border: #ffa07a solid 5px; /* light orange border color */
 }
+
 /* width */
 .stroll::-webkit-scrollbar {
   width: 15px;
+  
 }
 
 /* Track */
@@ -179,14 +186,15 @@ form {
 
 /* Handle */
 .stroll::-webkit-scrollbar-thumb {
-  background: rgb(69, 199, 132);
+  background: #000000; /* black scrollbar handle color */
   border-radius: 10px;
 }
 
 /* Handle on hover */
 .stroll::-webkit-scrollbar-thumb:hover {
-  background: #d80286;
+  background: #ffa07a; /* light orange scrollbar handle color */
 }
+
 .container td {
   font-weight: normal;
   font-size: 1em;
@@ -202,22 +210,30 @@ form {
   padding-left: 2%;
 }
 
-/* Background-color of the odd rows */
+/* Background-color and text color of the odd rows */
 .container tr:nth-child(odd) {
-  background-color: #323c50;
+  background-color: #87ceeb; /* light blue background color */
+  color: #ffffff; /* white text color */
 }
 
-/* Background-color of the even rows */
+/* Background-color of the odd rows */
+.container tr:nth-child(odd) {
+  background-color: #87ceeb; /* light blue background color */
+}
+
+/* Background-color and text color of the even rows */
 .container tr:nth-child(even) {
-  background-color: #2c3446;
+  background-color: #d3d3d3; /* light gray background color */
+  color: #000000; /* black text color */
 }
 
 .container th {
-  background-color: #1f2739;
+  background-color: #87ceeb; /* light blue background color */
+  color: #ffffff; /* white text color */
 }
 
 .container td:first-child {
-  color: #f09819;
+  color: #000000; /* black text color */
 }
 
 .container tr:hover {

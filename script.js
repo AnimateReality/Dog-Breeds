@@ -64,6 +64,7 @@ for (var i = 0; i < breeds.length; i++) {
       }
   }
 // submit button checks whether answer is correct and displays text base on answer
+document.querySelector('.btn').addEventListener('click', toggleText);
   function toggleText() {
       var x = document.getElementById("Myid");
       if (x.style.display === "none") {
