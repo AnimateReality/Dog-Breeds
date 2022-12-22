@@ -63,13 +63,16 @@ for (var i = 0; i < breeds.length; i++) {
           answerText.innerText = "incorrect. Try again"
       }
   }
-// submit button checks whether answer is correct and displays text base on answer
-document.querySelector('.btn').addEventListener('click', toggleText);
+  const button = document.getElementById('reveal');
+  button.addEventListener('click', toggleText());
   function toggleText() {
       var x = document.getElementById("Myid");
       if (x.style.display === "none") {
           x.style.display = "block";
+          button.innerHTML = 'Hide Answer';
       } else {
           x.style.display = "none";
+          button.innerHTML = 'Reveal Answer';
       }
+    
   }
