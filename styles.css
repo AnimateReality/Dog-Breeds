@@ -27,6 +27,9 @@ h3 {
   text-shadow: -1px -1px 0 rgb(238, 226, 226), 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
+.dog-text{
+  font-size: large;
+}
 /* container for page */
 .contain {
   width: 80%;
